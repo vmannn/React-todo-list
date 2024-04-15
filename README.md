@@ -33,7 +33,7 @@ To run the Todo List application locally using Docker, follow these steps:
 
 ```bash
 git clone https://github.com/vmannn/React-todo-list.git
-cd todo-list-ochia
+cd React-todo-list
 
 Build the docker image
 
