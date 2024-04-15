@@ -48,19 +48,7 @@ const ToDoList: React.FC<propTypes> = ({ tasks, setTasks }) => {
         setTag(event.target.value)
     }
 
-    const handleAddTagToArray = (
-        event: React.KeyboardEvent<HTMLInputElement>
-    ) => {
-        if ((event.key !== '' && event.key !== 'Enter') || tag === '') return
-
-        const updateTags = [...tags, tag]
-
-        setTags(updateTags)
-
-        setTag('')
-    }
-
-    const handleAddTagToArrayNoKeyboard = () => {
+    const handleAddTagToArray = () => {
         if (tag === '') return
 
         const updateTags = [...tags, tag]
@@ -232,12 +220,8 @@ const ToDoList: React.FC<propTypes> = ({ tasks, setTasks }) => {
                                 placeholder="Add a tag"
                                 onChange={handleSetTag}
                                 value={tag}
-                                onKeyDown={handleAddTagToArray}
                             ></input>{' '}
-                            <button
-                                type="button"
-                                onClick={handleAddTagToArrayNoKeyboard}
-                            >
+                            <button type="button" onClick={handleAddTagToArray}>
                                 add tag
                             </button>
                             <button type="submit" className="submit">
