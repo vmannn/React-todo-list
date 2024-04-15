@@ -12,6 +12,8 @@ This Todo List application is a dynamic web application built using React and Ty
 - **Sorting Capabilities**: Todo items can be sorted alphabetically or based on the date and time of creation, allowing users to easily organize their views.
 - **Interactive Checklist**: Each completed task is accompanied by a checkbox, providing a clear visual indication of its status.
 
+  ![](useforgithub.png)
+
 ## Technologies
 
 - **React**: A JavaScript library for building user interfaces.
