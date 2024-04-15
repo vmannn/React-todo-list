@@ -1,46 +1,46 @@
-# Getting Started with Create React App
+# Todo List Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This Todo List application is a dynamic web application built using React and TypeScript. It allows users to manage their daily tasks efficiently with features for tagging, filtering, and sorting tasks based on various criteria.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Task Status Identification**: Tasks can be marked as completed or pending. Completed tasks are visually distinguished by being struck through and are automatically moved to the bottom of the list.
+- **Tags**: Users can assign multiple tags to each todo item, facilitating organized task categorization.
+- **Filtering Options**: The application supports filtering todo items by tags, completion status (completed or pending), which helps in quickly finding relevant tasks.
+- **Sorting Capabilities**: Todo items can be sorted alphabetically or based on the date and time of creation, allowing users to easily organize their views.
+- **Interactive Checklist**: Each completed task is accompanied by a checkbox, providing a clear visual indication of its status.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technologies
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
+- **Docker**: Used to containerize the application, ensuring consistency across various development and production environments.
 
-### `npm test`
+## Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Before running the application, ensure you have the following installed:
+- Docker
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To run the Todo List application locally using Docker, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Clone the Repository
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/vmannn/React-todo-list.git
+cd todo-list-ochia
 
-### `npm run eject`
+Build the docker image
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+docker build -t todoapp:dev .
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ Run the application
+docker run -it -p 3000:3000 todoapp:dev
+The application will now be accessible at http://localhost:3000.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
