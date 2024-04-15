@@ -193,6 +193,7 @@ const ToDoList: React.FC<propTypes> = ({ tasks, setTasks }) => {
                                     name="date"
                                     type="date"
                                     onChange={handleDateChange}
+                                    required={true}
                                 ></input>
                             </p>
                             <p>
