@@ -1,0 +1,199 @@
+ .App{
+
+  width: 100vw;
+  min-height: 100% ;
+  height:auto;
+  background-color: #282828;
+  position:relative;
+
+} 
+
+.container{
+
+  height:absolute;
+
+
+
+
+}
+
+body{
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.Sidebar{
+
+  height: auto;
+  width: 300px;
+  background-color: #282828;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+  
+
+
+}
+
+.header{
+  color: white;
+  text-align: center;
+}
+
+.MainPage {
+
+
+   background-color: #161616;
+  min-height: 100vh; 
+  height: auto;
+  color: white;
+  top: 0;
+  margin-left: 300px;
+  padding-top: 10px;
+  width:100%
+
+
+}
+
+ .MainPage
+.main-page-header{
+
+
+  margin-left:50px;
+  
+
+} 
+
+.add-task-border{
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  border-radius: 20px;
+  margin-left:50px;
+  margin-right:100px;
+  padding-left: 50px;
+
+
+
+  color: white;
+}
+
+.add-new-todo{
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:#282828;
+  padding: 50px;
+  z-index: 1000;
+  border-radius: 10%;
+
+
+} 
+
+.add-new-todo
+.overlay{
+
+width: 100vw;
+height: 100vh;
+top:0;
+left:0;
+right: 0;
+bottom: 0;
+position: fixed
+
+}
+
+.overlay{
+
+background: black
+
+}
+
+.task{
+
+color: white;
+
+
+}
+
+.tags {
+
+  background-color: #e50323;
+  color:white;
+  border-radius: 30%;
+
+
+}
+
+.ToDoList {
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  border-radius: 20px;
+  margin-left:50px;
+  margin-right:150px;
+  padding-left: 50px;
+  width: 1100px
+
+
+}
+
+.ToDoList
+.todays-tasks-header-text{
+
+  padding-left: 300px;
+
+
+
+}
+
+.task{
+
+margin-top: 30px;
+
+
+
+}
+
+
+.font-icon-delete{
+
+margin-left: 970px;
+
+
+
+}
+
+.task-seperator{
+
+  width:90%;
+  background-color: gray;
+  padding-left:40px
+
+}
+
+.submit{
+
+  background-color: #e50323;
+}
+
+.sidebar-functionality{
+
+
+  text-align: center;
+  color:white;
+
+
+
+
+
+
+
+}
